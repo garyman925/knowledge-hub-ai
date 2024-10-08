@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程列表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/24/solid/index.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-bg': '#f0f4f8',
+                        'custom-sidebar': '#e1e8ef',
+                        'custom-text': '#2d3748',
+                        'custom-highlight': '#4299e1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-custom-bg font-sans text-custom-text">
+    <div class="flex h-screen">
+        <!-- 左侧菜单栏 -->
+        <nav id="sidebar" class="w-64 bg-custom-sidebar p-4">
+            <h2 class="text-xl font-bold mb-4">課程目錄</h2>
+            <ul id="course-list" class="space-y-2">
+                <!-- 课程列表将通过 JavaScript 动态加载 -->
+            </ul>
+        </nav>
+        
+        <!-- 主要内容 -->
+        <div id="content" class="flex-1 p-8 overflow-auto">
+            <!-- 课程内容将在这里动态加载 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
