@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>課程內容</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>課程內容</h1>
-    <p>這裡是課程的詳細內容。您可以根據需要添加更多的內容。</p>
-    <ul>
-        <li>第一章：課程介紹</li>
-        <li>第二章：基礎知識</li>
-        <li>第三章：進階技巧</li>
-        <li>第四章：實踐應用</li>
-    </ul>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6">課程內容</h1>
+        <p class="mb-8">這裡是課程的詳細內容。您可以根據需要添加更多的內容。</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 課程卡片 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="課程介紹" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">第一章：課程介紹</h2>
+                    <p class="text-gray-600">了解課程的基本結構和學習目標。</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">開始學習</a>
+                </div>
+            </div>
+
+            <!-- 課程卡片 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="基礎知識" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">第二章：基礎知識</h2>
+                    <p class="text-gray-600">學習該領域的核心概念和基本原理。</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">開始學習</a>
+                </div>
+            </div>
+
+            <!-- 課程卡片 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="進階技巧" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">第三章：進階技巧</h2>
+                    <p class="text-gray-600">深入探討高級主題和專業技能。</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">開始學習</a>
+                </div>
+            </div>
+
+            <!-- 課程卡片 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="實踐應用" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">第四章：實踐應用</h2>
+                    <p class="text-gray-600">通過實際案例學習如何應用所學知識。</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">開始學習</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
